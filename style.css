@@ -207,9 +207,6 @@ nav ul li ul li a {
   background: #ffffff;
 }
 
-/*
-.nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
-*/
 .nav-container {
   max-width: 1000px;
   margin: 0 auto;
