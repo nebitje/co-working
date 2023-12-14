@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'ubuntu', sans-serif;
 }
 
 .container {
@@ -13,39 +14,36 @@ header{
     background-color: #333;
 }
 
-.container a:link {
-    font-family: 'ubuntu', sans-serif;
+button {
+    margin-top: 0.5%;
+    background-color: white;
+    border: none;
     color: white;
-    text-decoration: none;
-}
-
-
-
-.main {
-    padding: 5px;
-    background: linear-gradient(to bottom, #3700ff 0%, #99e7ff 100%) no-repeat fixed;
-}
-
-
-.taalkiezer {
-    font-family: 'ubuntu', sans-serif;
-    font-size: 1em;
+    padding: 5px 25px;
+    margin-bottom: 26.4%;
     text-align: center;
-    padding-top: 22.5em;
-    color: #fffdff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
 }
 
 button:hover {
     background-color: #a1b0c7;
 }
 
-
-
 .navbar {
     overflow: hidden;
-    font-family: "ubuntu", sans-serif;
+    font-family: Arial;
     display: flex;
     justify-content: end;
+}
+
+main h1{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -50rem;
+    color: #000000;
+
 }
 
 .navbar a {
@@ -83,7 +81,7 @@ button:hover {
     position: absolute;
     background-color: #333;
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -102,4 +100,9 @@ button:hover {
 .dropdown:hover .dropdown-content {
     display: block;
     color: #000000;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
