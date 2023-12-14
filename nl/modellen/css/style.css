@@ -24,7 +24,10 @@ html {
     flex-direction: column;
     position: relative;
     flex: 0 0 31%;
+    width: 31%;
+    height: 0%;
     background-color: #f7f7f7;
+    transition: height 0.5s ease-in-out;
 }
 
 a{
@@ -37,7 +40,7 @@ a{
 }
 
 .automodellen li:hover {
-    min-width: 33%;
+    height: 33%;
 }
 
 .automodellen li:hover .A6::after {
@@ -62,4 +65,8 @@ a{
 
 .automodellen li:hover .SQ8::after {
     content: "De Audi SQ8 is een krachtige en stijlvolle SUV, waarbij indrukwekkende prestaties, luxe comfort en geavanceerde technologie samenkomen.";
+}
+
+.content{
+    font-weight: 0;
 }
