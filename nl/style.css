@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    overflow: hidden;
+    font-family: 'ubuntu', sans-serif;
 }
 
 .container {
@@ -12,30 +12,6 @@
 header{
     height: 3rem;
     background-color: #333;
-}
-
-.container a:link {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-decoration: none;
-}
-
-
-
-.main {
-    padding: 5px;
-    background: linear-gradient(to bottom, #3700ff 0%, #99e7ff 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
-.taalkiezer {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    padding-top: 22.5em;
-    color: #fffdff;
 }
 
 button {
@@ -55,13 +31,19 @@ button:hover {
     background-color: #a1b0c7;
 }
 
-
-
 .navbar {
     overflow: hidden;
     font-family: Arial;
     display: flex;
     justify-content: end;
+}
+
+main h1{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -50rem;
+    color: #000000;
+
 }
 
 .navbar a {
@@ -118,4 +100,9 @@ button:hover {
 .dropdown:hover .dropdown-content {
     display: block;
     color: #000000;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
