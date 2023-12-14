@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+}
+ 
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+ 
+header{
+    height: 3rem;
+    background-color: #333;
+}
+ 
+.container a:link {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+ 
+ 
+ 
+.main {
+    padding: 5px;
+    background: linear-gradient(to bottom, #3700ff 0%, #99e7ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ 
+ 
+.taalkiezer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 22.5em;
+    color: #fffdff;
+}
+ 
+button {
+    margin-top: 0.5%;
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    margin-bottom: 26.4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+}
+ 
+button:hover {
+    background-color: #a1b0c7;
+}
+ 
+ 
+ 
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+    display: flex;
+    justify-content: end;
+}
+ 
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+ 
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+ 
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+ 
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+ 
+.dropdown-content a:hover {
+    background-color: #504f4f;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #000000;
+}
