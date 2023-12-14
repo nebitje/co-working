@@ -27,7 +27,6 @@ html {
     width: 31%;
     height: 0%;
     background-color: #f7f7f7;
-    transition: height 0.5s ease-in-out;
 }
 
 a{
@@ -40,7 +39,8 @@ a{
 }
 
 .automodellen li:hover {
-    height: 33%;
+    min-height: 1%;
+    min-width: 32%;
 }
 
 .automodellen li:hover .A6::after {
