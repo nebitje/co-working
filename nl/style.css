@@ -1,40 +1,19 @@
 * {
     margin: 0;
+    font-family: 'ubuntu', sans-serif;
 }
- 
+
 .container {
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;
 }
- 
+
 header{
     height: 3rem;
     background-color: #333;
 }
- 
-.container a:link {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-decoration: none;
-}
- 
-.main {
-    padding: 5px;
-    background: linear-gradient(to bottom, #3700ff 0%, #99e7ff 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
- 
- 
-.taalkiezer {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    padding-top: 22.5em;
-    color: #fffdff;
-}
- 
+
 button {
     margin-top: 0.5%;
     background-color: white;
@@ -47,7 +26,7 @@ button {
     display: inline-block;
     font-size: 1.5em;
 }
- 
+
 button:hover {
     background-color: #a1b0c7;
 }
@@ -58,7 +37,15 @@ button:hover {
     display: flex;
     justify-content: end;
 }
- 
+
+main h1{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -50rem;
+    color: #000000;
+
+}
+
 .navbar a {
     float: left;
     font-size: 16px;
@@ -67,12 +54,12 @@ button:hover {
     padding: 14px 16px;
     text-decoration: none;
 }
- 
+
 .dropdown {
     float: left;
     overflow: hidden;
 }
- 
+
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -83,12 +70,12 @@ button:hover {
     font-family: inherit;
     margin: 0;
 }
- 
+
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: red;
 }
- 
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -97,7 +84,7 @@ button:hover {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
- 
+
 .dropdown-content a {
     float: none;
     padding: 12px 16px;
@@ -105,12 +92,17 @@ button:hover {
     display: block;
     text-align: left;
 }
- 
+
 .dropdown-content a:hover {
     background-color: #504f4f;
 }
- 
+
 .dropdown:hover .dropdown-content {
     display: block;
     color: #000000;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
