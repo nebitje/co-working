@@ -124,6 +124,6 @@ img {
 }
 
 .landingpage{
-    background-color: #333;
+    background: linear-gradient(180deg, rgba(32,31,31,1) 0%, rgba(74,72,72,1) 50%);;
 }
 
