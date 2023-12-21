@@ -1,7 +1,10 @@
 * {
-    font-family: 'ubuntu', sans-serif;
     margin: 0;
-    padding: 0;
+}
+html{
+font-family: "ubuntu", sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
 }
 
 .container {
@@ -11,10 +14,38 @@
 }
 
 header{
-    padding: 0.5rem;
     height: 3rem;
     background-color: #333;
 }
+
+.container a:link {
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.main {
+    padding: 5px;
+    background: linear-gradient(to bottom, #3700ff 0%, #99e7ff 100%) no-repeat fixed;
+}
+
+
+.taalkiezer {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 22.5em;
+    color: #fffdff;
+}
+
+button:hover {
+    background-color: #a1b0c7;
+}
+
+
+
 .navbar {
     overflow: hidden;
     font-family: "ubuntu", sans-serif;
@@ -77,53 +108,11 @@ header{
     display: block;
     color: #000000;
 }
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.taalkiezer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 22rem;
-    margin-bottom: 24.9rem;
-}
-
-.taalkiezer h1{
-    font-size: 2rem;
-    color: #f7f7f7;
-}
-
-.taalkeuzes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+hr{
     margin-top: 2rem;
-    gap: 2rem;
-}
+    margin-bottom:2rem;
+    padding: 0.2rem;
+    background-color: #6d0000;
+    transform: skew(30deg);
 
-.taalkeuzes a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 1.7rem;
 }
-
-.taalkeuzes button {
-    border: none;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-.taalkeuzes button:hover{
-    background-color: #c6c4c4;
-}
-
-.landingpage{
-    background: linear-gradient(180deg, rgba(32,31,31,1) 0%, rgba(74,72,72,1) 50%);;
-}
-
