@@ -15,36 +15,11 @@ header{
     height: 3rem;
     background-color: #333;
 }
-
-button {
-    margin-top: 0.5%;
-    background-color: white;
-    border: none;
-    color: white;
-    padding: 5px 25px;
-    margin-bottom: 26.4%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5em;
-}
-
-button:hover {
-    background-color: #a1b0c7;
-}
 .navbar {
     overflow: hidden;
     font-family: "ubuntu", sans-serif;
     display: flex;
     justify-content: end;
-}
-
-main h1{
-    text-align: center;
-    font-size: 3em;
-    margin-top: -50rem;
-    color: #000000;
-
 }
 
 .navbar a {
@@ -107,3 +82,48 @@ img {
     width: 100%;
     height: auto;
 }
+
+.taalkiezer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22rem;
+    margin-bottom: 24.9rem;
+}
+
+.taalkiezer h1{
+    font-size: 2rem;
+    color: #f7f7f7;
+}
+
+.taalkeuzes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.taalkeuzes a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+.taalkeuzes button {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.taalkeuzes button:hover{
+    background-color: #c6c4c4;
+}
+
+.landingpage{
+    background-color: #333;
+}
+
