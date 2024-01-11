@@ -1,8 +1,9 @@
 * {
     margin: 0;
 }
-html{
-font-family: "ubuntu", sans-serif;
+
+html {
+    font-family: "ubuntu", sans-serif;
     background-color: #fdfdfd;
     color: #222;
 }
@@ -13,7 +14,7 @@ font-family: "ubuntu", sans-serif;
     padding: 0 1rem;
 }
 
-header{
+header {
     height: 3rem;
     background-color: #333;
 }
@@ -40,14 +41,14 @@ header{
 }
 
 
-button{
+button {
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 5px;
 }
 
 
-button a{
+button a {
     padding: 1rem;
     max-width: min-content;
     color: #333;
@@ -121,9 +122,10 @@ button:hover {
     display: block;
     color: #000000;
 }
-hr{
+
+hr {
     margin-top: 2rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     padding: 0.2rem;
     background-color: #6d0000;
     transform: skew(30deg);
