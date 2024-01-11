@@ -135,7 +135,7 @@ hr {
 footer {
     position: absolute;
     bottom: 0;
-    height: auto;
+    height: 14rem;
     background-color: #333333;
     width: 100%;
 }
