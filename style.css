@@ -127,8 +127,8 @@ hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem;
-    background-color: #6d0000;
-    transform: skew(30deg);
+    background-color: #ad0000;
+    transform: skew(-30deg);
 
 }
 
