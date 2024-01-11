@@ -6,7 +6,9 @@
 }
 
 html {
-    font-family: 'ubuntu', sans-serif;
+    font-family: "ubuntu", sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
     scroll-behavior: smooth;
 }
 
