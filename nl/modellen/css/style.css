@@ -201,6 +201,11 @@ hr{
     transform: skew(30deg);
 }
 
+.info{
+    background-color: grey;
+    color: #6d0000;
+}
+
 /* back to top */
 .material-symbols-outlined{    
     background-color: #6d0000;
