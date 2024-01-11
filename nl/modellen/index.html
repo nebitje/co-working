@@ -12,6 +12,10 @@
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--Pijltje naar boven-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -38,44 +42,177 @@
     <main>
         <!--zijbar aanmaken om auto's weer te geven volgens categorie?-->
         <h1>Alle modellen</h1>
-        <ul class="automodellen">
-            <li>
-                <div class="content A6">
-                    <h2><a href="" class="overlay-link">Audi A6</a></h2>
-                </div>
-                <img src="img/A6/Audi_A6_Zij.jpg" alt="Audi A6 side profile">
-            </li>
-            <li>
-                <div class="content R8">
-                    <h2><a href="" class="overlay-link">Audi R8</a></h2>
-                </div>
-                <img src="img/audiR8/Audi_R8_Zijkant.jpg" alt="Audi R8 side profile">
-            </li>
-            <li>
-                <div class="content etron">
-                    <h2><a href="" class="overlay-link">Audi e-tron</a></h2>
-                </div>
-                <img src="img/etron/Audi_e-tron_GT_Zij.jpg" alt="Audi etron side profile">
-            </li>
-            <li>
-                <div class="content RS5">
-                    <h2><a href="" class="overlay-link">Audi RS5</a></h2>
-                </div>
-                <img src="img/rs5/Audi_RS5_Zij.jpg" alt="Audi RS5 side profile">
-            </li>
-            <li>
-                <div class="content RS6">
-                    <h2><a href="" class="overlay-link">Audi RS6</a></h2>
-                </div>
-                <img src="img/rs6/Audi_RS6_Zij.jpg" alt="Audi RS6 side profile">
-            </li>
-            <li>
-                <div class="content SQ8">
-                    <h2><a href="">Audi SQ8</a></h2>
-                </div>
-                <img src="img/SQ8/Audi_SQ8_Zij.jpg" alt="Audi SQ8 side profile">
-            </li>
-        </ul>
+        <section class="menu">
+        <!--    <ul class="automodellen">
+                <li>
+                    <div class="content A6">
+                        <h2><a href="#A6" class="overlay-link">Audi A6</a></h2>
+                    </div>
+                    <img src="img/A6/Audi_A6_Zij.jpg" alt="Audi A6 side profile">
+                </li>
+                <li>
+                    <div class="content R8">
+                        <h2><a href="#R8" class="overlay-link">Audi R8</a></h2>
+                    </div>
+                    <img src="img/audiR8/Audi_R8_Zijkant.jpg" alt="Audi R8 side profile">
+                </li>
+                <li>
+                    <div class="content etron">
+                        <h2><a href="#etron" class="overlay-link">Audi e-tron</a></h2>
+                    </div>
+                    <img src="img/etron/Audi_e-tron_GT_Zij.jpg" alt="Audi etron side profile">
+                </li>
+                <li>
+                    <div class="content RS5">
+                        <h2><a href="#RS5" class="overlay-link">Audi RS5</a></h2>
+                    </div>
+                    <img src="img/rs5/Audi_RS5_Zij.jpg" alt="Audi RS5 side profile">
+                </li>
+                <li>
+                    <div class="content RS6">
+                        <h2><a href="#RS6" class="overlay-link">Audi RS6</a></h2>
+                    </div>
+                    <img src="img/rs6/Audi_RS6_Zij.jpg" alt="Audi RS6 side profile">
+                </li>
+                <li>
+                    <div class="content SQ8">
+                        <h2><a href="#SQ8">Audi SQ8</a></h2>
+                    </div>
+                    <img src="img/SQ8/Audi_SQ8_Zij.jpg" alt="Audi SQ8 side profile">
+                </li>
+            </ul>
+        -->
+        <div>
+            <a href="#A6"><img class="mySlides" src="img/A6/Audi_A6_Zij.jpg"></a>
+            <a href="#R8"><img class="mySlides" src="img/audiR8/Audi_R8_Zijkant.jpg"></a>
+            <a href="#etron"><img class="mySlides" src="img/etron/Audi_e-tron_GT_Zij.jpg"></a>
+            <a href="#RS5"><img class="mySlides" src="img/rs5/Audi_RS5_Zij.jpg"></a>
+            <a href="#RS6"><img class="mySlides" src="img/rs6/Audi_RS6_Zij.jpg"></a>
+            <a href="#SQ8"><img class="mySlides" src="img/SQ8/Audi_SQ8_Zij.jpg"></a>
+          </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+          }
+          </script>
+        </section>
+
+        <section class="page" id="A6">
+            <hr>
+            <h2>Audi A6</h2>
+            <div class="content">
+                <p>De Audi A6 is een luxe sedan die uitblinkt in elegantie, prestaties en geavanceerde technologie. Met
+                    een
+                    gestroomlijnd design, krachtige motoren en een hoogwaardig interieur biedt de A6 een comfortabele en
+                    stijlvolle rijervaring. Het voertuig is voorzien van geavanceerde veiligheidsvoorzieningen en
+                    moderne
+                    technologieën, waardoor het een ideale keuze is voor wie op zoek is naar een combinatie van
+                    verfijning
+                    en prestaties.</p>
+                <img src="img/A6/Audi_A6_Voor.jpg" alt="Audi A6 front">
+            </div>
+        </section>
+
+        <section class="page" id="R8">
+            <hr>
+            <h2>Audi R8</h2>
+            <div class="content">
+
+                <p>De Audi R8 is een indrukwekkende sportwagen die uitblinkt in kracht, snelheid en verfijning. Met een
+                    opvallend ontwerp, krachtige motoren en geavanceerde technologieën biedt de R8 een sensationele
+                    rijervaring. Zowel het gestroomlijnde exterieur als het luxe interieur benadrukken de sportieve aard
+                    van
+                    deze iconische auto. Met geavanceerde rijhulpsystemen en veiligheidsvoorzieningen combineert de Audi
+                    R8
+                    prestaties met gemoedsrust, waardoor het de ultieme keuze is voor liefhebbers van high-performance
+                    auto's.</p>
+                <img src="img/audiR8/Audi_R8_SchuinVoorAanzicht.jpg" alt="Audi R8 front">
+            </div>
+        </section>
+
+        <section class="page" id="etron">
+            <hr>
+            <h2>Audi etron</h2>
+            <div class="content">
+
+                <p>De Audi e-tron is een baanbrekende elektrische SUV die innovatie, stijl en duurzaamheid samenbrengt.
+                    Met
+                    een geavanceerde elektrische aandrijflijn biedt de e-tron indrukwekkende prestaties en een
+                    emissievrije
+                    rijervaring. Het strakke design, hoogwaardige interieur en geavanceerde technologische functies
+                    maken
+                    deze SUV zowel praktisch als luxe. Voor wie op zoek is naar een milieubewuste en hoogwaardige
+                    elektrische auto is de Audi e-tron een vooruitstrevende keuze.</p>
+                <img src="img/etron/Audi_e-tron_GT.jpg" alt="Audi Etron front">
+            </div>
+        </section>
+
+        <section class="page" id="RS5">
+            <hr>
+            <h2>Audi RS5</h2>
+            <div class="content">
+
+                <p>De Audi RS5 is een opwindende high-performance sportwagen die kracht, snelheid en sportiviteit
+                    belichaamt. Met een krachtige motor, opvallend design en geavanceerde technologieën biedt de RS5 een
+                    adembenemende rijervaring. Zijn gestroomlijnde exterieur weerspiegelt de sportieve aard, terwijl het
+                    luxe interieur en geavanceerde functies een perfecte balans creëren tussen prestaties en comfort.
+                    Voor
+                    liefhebbers van sportieve auto's die op zoek zijn naar opwinding op de weg, is de Audi RS5 de
+                    ultieme
+                    keuze.</p>
+                <img src="img/rs5/Audi_RS5_Voor.jpg" alt="Audi RS5 front">
+            </div>
+        </section>
+
+        <section class="page" id="RS6">
+            <hr>
+            <h2>Audi RS6</h2>
+            <div class="content">
+
+                <p>De Audi RS6 is een sensationele high-performance sportwagen die kracht, snelheid en luxe combineert.
+                    Met
+                    een krachtige motor, opvallend sportief design en geavanceerde technologieën biedt de RS6 een
+                    adembenemende rijervaring. Zijn gestroomlijnde exterieur straalt sportiviteit uit, terwijl het luxe
+                    interieur en geavanceerde functies een perfecte harmonie vormen tussen prestaties en comfort. Voor
+                    liefhebbers van sportieve auto's die op zoek zijn naar ultieme snelheid en stijl op de weg, is de
+                    Audi
+                    RS6 de perfecte keuze.</p>
+                <p class="voorraad">Aantal in voorraad: 5</p>
+                <img src="img/rs6/Audi_RS6_Voor.jpg" alt="Audi RS6 front">
+            </div>
+        </section>
+
+        <section class="page" id="SQ8">
+            <hr>
+            <h2>Audi SQ8</h2>
+            <div class="content">
+                <p>De Audi SQ8 is een krachtige en luxueuze SUV die topprestaties combineert met verfijning. Met een
+                    krachtige motor, indrukwekkend design en geavanceerde technologieën biedt de SQ8 een opwindende
+                    rijervaring. Zijn gestroomlijnde exterieur straalt kracht uit, terwijl het hoogwaardige interieur en
+                    geavanceerde functies comfort en luxe bieden. Voor diegenen die op zoek zijn naar een SUV met
+                    sportieve
+                    prestaties en premium kenmerken, is de Audi SQ8 een uitstekende keuze.</p><img
+                    src="img/SQ8/Audi_SQ8_Voor.jpg" alt="Audi SQ8 front">
+            </div>
+        </section>
+        <!--pijltje naar boven-->
+        <a href="#">
+            <span class="material-symbols-outlined">
+                keyboard_double_arrow_up
+            </span>
+        </a>
     </main>
     <footer>
 

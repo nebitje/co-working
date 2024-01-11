@@ -7,6 +7,7 @@
 
 html {
     font-family: 'ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*nav bar Benten*/
@@ -90,25 +91,64 @@ header{
     color: #000000;
 }
 
+
 /* automodellen */
+main, main{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;    
+}
+h1{
+    text-align: center;
+}
+
+.page, .menu{
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #6d0000 2px solid;
+}
+.menu > .automodellen {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 30%;
+    height: 100vh;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100%;
+}
+
+.content img{
+    max-height: 80%;
+    max-width: 50%;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
 .automodellen {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
-
+    justify-content: space-between;
+    align-items: center;
 }
-
 .automodellen li {
+    padding-right: 1rem;
     box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
     display: flex;
     flex-direction: column;
-    position: relative;
-    flex: 0 0 31%;
-    width: 31%;
-    height: 0%;
+    flex: 1;
+    gap:1rem;
+    height: 0;
     background-color: #f7f7f7;
 }
 
@@ -121,12 +161,7 @@ a{
     width: 100%;
 }
 
-.automodellen li:hover {
-    min-height: 1%;
-    min-width: 32%;
-}
-
-.automodellen li:hover .A6::after {
+/*.automodellen li:hover .A6::after {
     content: "De Audi A6 is een elegante en luxe middenklasse sedan, gekenmerkt door verfijnd design, hoogwaardige materialen en geavanceerde technologieën.";
 }
 
@@ -149,7 +184,35 @@ a{
 .automodellen li:hover .SQ8::after {
     content: "De Audi SQ8 is een krachtige en stijlvolle SUV, waarbij indrukwekkende prestaties, luxe comfort en geavanceerde technologie samenkomen.";
 }
+*/
 
 .content{
     font-weight: 0;
+    text-align: left;
+}
+
+hr{
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    padding: 0.2rem;
+    background-color: #6d0000;
+    transform: skew(30deg);
+}
+
+/* back to top */
+.material-symbols-outlined{    
+    background-color: #6d0000;
+    color: #ffffff;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0.3rem;
+    transition: padding-bottom 0.5s;
+}
+.material-symbols-outlined:hover{
+    padding-bottom: 0.7rem;
 }
