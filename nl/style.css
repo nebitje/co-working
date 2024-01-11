@@ -17,6 +17,58 @@
     padding: 1.3rem; 
 }
 
+
+
+.button-diensten {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #6d0000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 auto;
+    display: block; 
+
+}
+
+.button-diensten:hover {
+    background-color: #6d00002d;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.button-diensten-div{
+    margin-bottom: 2rem;
+}
+
+
+
+.button-modellen {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #6d0000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 auto;
+    display: block; 
+
+}
+
+.button-modellen:hover {
+    background-color: #6d00002d;
+    color: #fff;
+    text-decoration: none;
+}
+
+
 #slideshow {
     text-align: center;
     margin-top: -22rem;
