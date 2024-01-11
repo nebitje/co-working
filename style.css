@@ -20,7 +20,6 @@ header{
 
 .container a:link {
     font-family: 'ubuntu', sans-serif;
-    color: white;
     text-decoration: none;
 }
 
@@ -37,11 +36,25 @@ header{
     font-size: 1em;
     text-align: center;
     padding-top: 22.5em;
-    color: #fffdff;
+    color: #333;
+}
+
+
+button{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+button a{
+    padding: 1rem;
+    max-width: min-content;
+    color: #333;
 }
 
 button:hover {
-    background-color: #a1b0c7;
+    text-decoration: underline;
 }
 
 
@@ -154,6 +167,7 @@ footer a:hover {
 .socialmedia {
     display: flex;
     flex-direction: column;
+    font-size: 2rem;
 }
 
 .iframe-container {
