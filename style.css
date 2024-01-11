@@ -1,8 +1,9 @@
 * {
     margin: 0;
 }
-html{
-font-family: "ubuntu", sans-serif;
+
+html {
+    font-family: "ubuntu", sans-serif;
     background-color: #fdfdfd;
     color: #222;
 }
@@ -13,14 +14,13 @@ font-family: "ubuntu", sans-serif;
     padding: 0 1rem;
 }
 
-header{
+header {
     height: 3rem;
     background-color: #333;
 }
 
 .container a:link {
     font-family: 'ubuntu', sans-serif;
-    color: white;
     text-decoration: none;
 }
 
@@ -37,11 +37,25 @@ header{
     font-size: 1em;
     text-align: center;
     padding-top: 22.5em;
-    color: #fffdff;
+    color: #333;
+}
+
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+button a {
+    padding: 1rem;
+    max-width: min-content;
+    color: #333;
 }
 
 button:hover {
-    background-color: #a1b0c7;
+    text-decoration: underline;
 }
 
 
@@ -108,11 +122,55 @@ button:hover {
     display: block;
     color: #000000;
 }
-hr{
-    margin-top: 2rem;
-    margin-bottom:2rem;
-    padding: 0.2rem;
-    background-color: #6d0000;
-    transform: skew(30deg);
 
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+    background-color: #ad0000;
+    transform: skew(-30deg);
+
+}
+
+footer {
+    bottom: 0;
+    height: 14rem;
+    background-color: #333333;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.iframe-container {
+    padding: 1rem;
 }
