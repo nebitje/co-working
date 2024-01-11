@@ -29,7 +29,8 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="utf-8">
     <title>Mijn berichten</title>
-    <link rel="stylesheet" href="../../audicontact/styles.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 <div class=container>
@@ -40,7 +41,8 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <ul>
                 <?php foreach ($items as $item) { ?>
                     <li>
-                        <p>Verzender: <?php echo htmlentities($item['sender']); ?></p>
+                        <p>Verender: <?php echo htmlentities($item['name']); ?></p>
+                        <p>Email: <?php echo htmlentities($item['sender']); ?></p>
                         <p>Datum: <?php echo (new Datetime(htmlentities($item['added_on'])))->format('d-m-Y H:i:s'); ?></p>
                         <p>Bericht:<br><?php echo htmlentities($item['message']); ?></p>
                     </li>

@@ -1,0 +1,91 @@
+/*INTRO*/
+
+.intro{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.intro h1{
+    font-size: 56px;
+    margin-bottom: 1rem;
+}
+.intro p:nth-child(3){
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+/*FORMULIER*/
+input:not([type=submit]),
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 40rem;
+    padding: .75em;
+    border: 2px solid #6d0000;
+    border-radius: .3rem;
+}
+
+input:not([type=submit]):hover,
+textarea:hover,
+input:not([type=submit]):focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #6d0000;
+}
+
+label,
+input[type=submit] {
+    margin-top: 2rem;
+}
+
+input[type=submit] {
+    background-color: #6d0000;
+    border: none;
+    border-radius: .3rem;
+    color: #fffdff;
+    max-width: 40rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus-visible {
+    background-color: #1f1f1f;
+}
+
+label {
+    display: block;
+    margin-bottom: .2em;
+}
+
+.formulier{
+    margin: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.formulier img{
+    aspect-ratio: 8/5;
+    width: 100%;
+    max-width: 40rem;
+    object-fit: contain;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+/*ERROR MESSAGE*/
+
+.message {
+    font-size: 1.4rem;
+}
+
+.message.error {
+    color: #b90e0a;
+}
+
+/*MY MESSAGES*/
+
+.listing li {
+    list-style: none;
+    padding: 1rem;
+    margin: 3rem;
+    border: 5px solid #000000;;
+}
