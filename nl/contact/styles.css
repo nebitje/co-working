@@ -1,0 +1,74 @@
+/* page */
+html {
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 1rem;
+	max-width: 1280px;
+}
+h1{
+	text-transform: uppercase;
+}
+
+/* form-fields */
+/* zie demo bestanden bij de theorie voor meer CSS ;) */
+input:not([type=submit]),
+textarea {
+	display: block;
+	width: 100%;
+	max-width: 40rem;
+	padding: .75em;
+	border: 1px solid #666;
+	border-radius: .3rem;
+}
+
+label,
+input[type=submit] {
+	margin-top: 2rem;
+}
+input[type=submit] {
+	background-color: #111;
+	border: none;
+	color: #fffdff;
+	width: 100%;
+	max-width: 40rem;
+	padding: 2rem;
+	margin-top: 1rem;
+	text-decoration: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease-in-out;
+}
+input[type=submit]:hover,
+input[type=submit]:focus-visible{
+background-color: #666666;
+}
+label {
+	display: block;
+	margin-bottom: .2em;
+}
+
+.message {
+	font-size: 1.4rem;
+}
+.message.error {
+	color: #b90e0a;
+}
+.listing li{
+	list-style: none;
+	padding: 1rem;
+	margin: 3rem;
+	border: 5px solid #000000;;
+}
