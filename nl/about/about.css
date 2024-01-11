@@ -119,12 +119,11 @@ footer {
     background-color: #ddd;
 }
 
-<style>
-    .img-left {
-        float: left;
-        margin-right: 10px;
-    }
-</style>
+
+.img-left {
+    float: left;
+    margin-right: 10px;
+}
 
 .container {
     overflow: auto;
