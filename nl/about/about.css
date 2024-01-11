@@ -63,22 +63,6 @@ article {
     width: 100%;
 }
 
-.left, .right {
-    width: 100%;
-    text-align: justify;
-    margin-bottom: 45px;
-}
-
-.right {
-    margin-top: 30px;
-}
-
-.left img, .right img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 30px 30px; 
-}
-
 article p {
     text-align: justify;
     width: 100%;
@@ -133,4 +117,20 @@ footer {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+}
+
+<style>
+    .img-left {
+        float: left;
+        margin-right: 10px;
+    }
+</style>
+
+.container {
+    overflow: auto;
+}
+
+.img-left {
+    float: left;
+    margin-right: 10px;
 }
