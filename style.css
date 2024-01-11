@@ -116,3 +116,46 @@ hr{
     transform: skew(30deg);
 
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    background-color: #333333;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+}
+
+.iframe-container {
+    padding: 1rem;
+}
