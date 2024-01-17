@@ -26,13 +26,13 @@ header{
 }
 
 .container a:link {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: 'ubuntu', sans-serif;
     text-decoration: none;
 }
+
 .navbar {
     overflow: hidden;
-    font-family: "Arial", sans-serif;
+    font-family: "ubuntu", sans-serif;
     display: flex;
     justify-content: end;
 }
@@ -125,7 +125,7 @@ header{
     justify-content: center;
 }
 .manual-btn{
-    border: 2px solid #6d0000;
+    border: 2px solid #fdfdfd;
     padding: 0.3em;
     border-radius: 10px;
     cursor: pointer;
@@ -135,7 +135,7 @@ header{
     margin-right: 2.5rem;
 }
 .manual-btn:hover{
-    background-color: #6d0000;
+    background-color: #fdfdfd;
 }
 
 #radio1:checked ~ .first{
@@ -166,7 +166,7 @@ header{
     margin-top: 28.75rem;
 }
 .navigation-auto div{
-    border: 2px solid #6d0000;
+    border: 2px solid #fdfdfd;
     padding: 0.3em;
     border-radius: 10px;
     transition: 1s;
@@ -176,30 +176,31 @@ header{
 
 }
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #6d0000;
+    background: #fdfdfd;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #6d0000;
+    background: #fdfdfd;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #6d0000;
+    background: #fdfdfd;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #6d0000;
+    background: #fdfdfd;
 }
 #radio5:checked ~ .navigation-auto .auto-btn5{
-    background: #6d0000;
+    background: #fdfdfd;
 }
 #radio6:checked ~ .navigation-auto .auto-btn6{
-    background: #6d0000;
+    background: #fdfdfd;
 }
+
 /* automodellen */
 main{
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;    
 }
-h1{
+main h1{
     font-size: 2.5rem;
 }
 
@@ -307,4 +308,53 @@ hr{
 }
 .material-symbols-outlined:hover{
     padding-bottom: 0.7rem;
+}
+
+/*footer*/
+footer {
+    margin-top: 4rem;
+    bottom: 0;
+    background-color: #333333;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.iframe-container {
+    padding: 1rem;
 }
