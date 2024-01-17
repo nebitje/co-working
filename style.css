@@ -151,15 +151,13 @@ hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem;
-    background-color: #6d0000;
-    transform: skew(30deg);
+    background-color: #ad0000;
+    transform: skew(-30deg);
 
 }
-
 footer {
     margin-top: 4rem;
     bottom: 0;
-    height: 14rem;
     background-color: #333333;
     width: 100%;
 }
@@ -167,7 +165,6 @@ footer {
 footer .container {
     max-width: 80rem;
     margin: 0 auto;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,6 +185,12 @@ footer a:hover {
     flex-direction: column;
     text-align: center;
     font-size: 1.3rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
 }
 
 .socialmedia {
