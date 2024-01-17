@@ -47,7 +47,7 @@ header {
 }
 
 
-button {
+.button {
     display: flex;
     padding: 1rem 0;
     font-size: 16px;
@@ -63,22 +63,22 @@ button {
 
 }
 
-.taalkeuzes button{
+.taalkeuzes .button{
     width: 9rem;
 }
 
-button:hover {
+.button:hover {
     background-color: #6d00002d;
     color: #fff;
     text-decoration: none;
     border: 2px solid #6d0000;
 }
 
-button a:link {
+.button a:link {
     color: #6d0000;
 }
 
-button a:visited {
+.button a:visited {
     color: #6d0000;
 }
 
