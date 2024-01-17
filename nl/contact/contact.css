@@ -36,23 +36,36 @@ input[type=submit] {
 }
 
 input[type=submit] {
-    background-color: #6d0000;
-    border: none;
-    border-radius: .3rem;
-    color: #fffdff;
-    max-width: 40rem;
-    padding: 2rem;
-    margin-top: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    padding: 1rem;
+    font-size: 16px;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease-in-out;
+    
+    color: #6d0000;
+    border: 2px solid #6d0000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 2 auto;
+    display: block; 
+    width: auto;
+}
+
+.button a:link {
+    color: #6d0000;
+}
+
+.button a:visited {
+    color: #6d0000;
 }
 
 input[type=submit]:hover,
 input[type=submit]:focus-visible {
-    background-color: #1f1f1f;
-}
+    background-color: #6d000025;
+    text-decoration: none;
+    border: 2px solid #6d0000;}
 
 label {
     display: block;
