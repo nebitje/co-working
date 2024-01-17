@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alle modellen</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -41,9 +40,10 @@
     </header>
     <main>
         <!--zijbar aanmaken om auto's weer te geven volgens categorie?-->
-        <h1>Alle modellen</h1>
         <section class="menu">
-        <!--    <ul class="automodellen">
+        <h1>Onze modellen</h1>
+
+            <!--    <ul class="automodellen">
                 <li>
                     <div class="content A6">
                         <h2><a href="#A6" class="overlay-link">Audi A6</a></h2>
@@ -82,31 +82,56 @@
                 </li>
             </ul>
         -->
-        <div>
-            <a href="#A6"><img class="mySlides" src="img/A6/Audi_A6_Zij.jpg"></a>
-            <a href="#R8"><img class="mySlides" src="img/audiR8/Audi_R8_Zijkant.jpg"></a>
-            <a href="#etron"><img class="mySlides" src="img/etron/Audi_e-tron_GT_Zij.jpg"></a>
-            <a href="#RS5"><img class="mySlides" src="img/rs5/Audi_RS5_Zij.jpg"></a>
-            <a href="#RS6"><img class="mySlides" src="img/rs6/Audi_RS6_Zij.jpg"></a>
-            <a href="#SQ8"><img class="mySlides" src="img/SQ8/Audi_SQ8_Zij.jpg"></a>
-          </div>
-          
-          <script>
-          var myIndex = 0;
-          carousel();
-          
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 3000); // Change image every 2 seconds
-          }
-          </script>
+            <!--Image slider-->
+            <div class="slider">
+                <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <!--car pictures-->
+                    <div class="slide first">
+                        <a href="#A6"><img src="img/A6/carpixel.net-2018-audi-a6-sedan-78026-hd.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#R8"><img src="img/audiR8/carpixel.net-2020-audi-r8-coupe-performance-au-100114-hd.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#etron"><img src="img/etron/carpixel.net-2021-audi-e-tron-gt-103163-hd.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#RS5"><img src="img/rs5/carpixel.net-2020-audi-rs-5-sportback-98859-hd.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#RS6"><img src="img/rs6/carpixel.net-2020-audi-rs-6-avant-uk-97716-hd.jpg" alt=""></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#SQ8"><img src="img/SQ8/carpixel.net-2020-audi-sq8-us-100730-hd.jpg" alt=""></a>
+                    </div>
+                    <!--automatic navigation-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                    </div>
+
+                </div>
+                <!--manual navigation-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+            </div>
         </section>
 
         <section class="page" id="A6">
@@ -121,7 +146,7 @@
                     technologieën, waardoor het een ideale keuze is voor wie op zoek is naar een combinatie van
                     verfijning
                     en prestaties.</p>
-                <img src="img/A6/Audi_A6_Voor.jpg" alt="Audi A6 front">
+                <img src="img/A6/carpixel.net-2018-audi-a6-sedan-78026-hd.jpg" alt="Audi A6 front">
             </div>
         </section>
 
@@ -138,7 +163,7 @@
                     R8
                     prestaties met gemoedsrust, waardoor het de ultieme keuze is voor liefhebbers van high-performance
                     auto's.</p>
-                <img src="img/audiR8/Audi_R8_SchuinVoorAanzicht.jpg" alt="Audi R8 front">
+                <img src="img/audiR8/Audi_R8_SchuinVoorAanzicht2.jpg" alt="Audi R8 front">
             </div>
         </section>
 
@@ -155,7 +180,7 @@
                     maken
                     deze SUV zowel praktisch als luxe. Voor wie op zoek is naar een milieubewuste en hoogwaardige
                     elektrische auto is de Audi e-tron een vooruitstrevende keuze.</p>
-                <img src="img/etron/Audi_e-tron_GT.jpg" alt="Audi Etron front">
+                <img src="img/etron/carpixel.net-2021-audi-e-tron-gt-103163-hd.jpg" alt="Audi Etron front">
             </div>
         </section>
 
@@ -171,7 +196,7 @@
                     liefhebbers van sportieve auto's die op zoek zijn naar opwinding op de weg, is de Audi RS5 de
                     ultieme
                     keuze.</p>
-                <img src="img/rs5/Audi_RS5_Voor.jpg" alt="Audi RS5 front">
+                <img src="img/rs5/carpixel.net-2020-audi-rs-5-sportback-98863-hd.jpg" alt="Audi RS5 front">
             </div>
         </section>
 
@@ -188,9 +213,8 @@
                     liefhebbers van sportieve auto's die op zoek zijn naar ultieme snelheid en stijl op de weg, is de
                     Audi
                     RS6 de perfecte keuze.
-                    <span class="info">Meer info</span>
                 </p>
-                <img src="img/rs6/Audi_RS6_Voor.jpg" alt="Audi RS6 front">
+                <img src="img/rs6/carpixel.net-2020-audi-rs-6-avant-uk-97715-hd.jpg" alt="Audi RS6 front">
             </div>
         </section>
 
@@ -204,7 +228,7 @@
                     geavanceerde functies comfort en luxe bieden. Voor diegenen die op zoek zijn naar een SUV met
                     sportieve
                     prestaties en premium kenmerken, is de Audi SQ8 een uitstekende keuze.</p><img
-                    src="img/SQ8/Audi_SQ8_Voor.jpg" alt="Audi SQ8 front">
+                    src="img/SQ8/carpixel.net-2020-audi-sq8-us-100728-hd.jpg" alt="Audi SQ8 front">
             </div>
         </section>
         <!--pijltje naar boven-->
@@ -217,6 +241,17 @@
     <footer>
 
     </footer>
+    <!--script automatische slide show-->
+    <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 6){
+                counter = 1;
+            }
+        },5000);
+    </script>
 </body>
 
 </html>

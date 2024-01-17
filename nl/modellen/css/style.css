@@ -93,34 +93,124 @@ header{
     color: #000000;
 }
 
+/*slide show verander de px!!*/
+.slider{
+    width: 50rem;
+    height: 31rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 31.25rem;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 50rem;
+    height: 31rem;
+}
+/*radio buttons*/
+.navigation-manual{
+    position: absolute;
+    width: 50rem;
+    margin-top: -2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #6d0000;
+    padding: 0.3em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 2.5rem;
+}
+.manual-btn:hover{
+    background-color: #6d0000;
+}
 
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+
+/*automatic*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 50rem;
+    justify-content: center;
+    margin-top: 28.75rem;
+}
+.navigation-auto div{
+    border: 2px solid #6d0000;
+    padding: 0.3em;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 2.5rem;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #6d0000;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #6d0000;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #6d0000;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #6d0000;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #6d0000;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #6d0000;
+}
 /* automodellen */
-main, main{
+main{
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;    
 }
 h1{
-    text-align: center;
+    font-size: 2.5rem;
 }
 
-.page, .menu{
+.menu{
     height: 100vh;
 }
 
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border: #6d0000 2px solid;
-}
-.menu > .automodellen {
-    display: flex;
-    align-items: center;
-    position: relative;
-    bottom: 30%;
-    height: 100vh;
-
 }
 
 .content{
@@ -195,15 +285,10 @@ a{
 
 hr{
     margin-top: 2rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     padding: 0.2rem;
     background-color: #6d0000;
-    transform: skew(30deg);
-}
-
-.info{
-    background-color: grey;
-    color: #6d0000;
+    transform: skew(-30deg);
 }
 
 /* back to top */
