@@ -17,7 +17,7 @@
     order: -1;
 }
 
-img{
+.left img, .right img{
     animation: fade-in linear;
     animation-timeline: view();
     animation-range-start: cover;
