@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', 'Azerty123');
-define('DB_NAME', 'audi°db');
+define('DB_NAME', 'audi_db');
 
 date_default_timezone_set('Europe/Brussels');
 
@@ -75,8 +75,8 @@ if (isset($_POST['btnSubmit'])) {
     <title>Contact</title>
     <meta charset="UTF-8"/>
     <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="contact.css">
 </head>
@@ -136,6 +136,30 @@ if (isset($_POST['btnSubmit'])) {
         <img src="../../img/contact/contact.jpg" alt="Consultant">
     </div>
 </main>
-<footer></footer>
+<footer>
+    <div class="container">
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/AudiBelux" target="_blank"><img src="../img/svg's/facebook-f.svg"
+                                                                              alt="facebook logo"></a>
+            <a href="https://www.instagram.com/audibelux/" target="_blank"><img src="../img/svg's/instagram.svg"
+                                                                                alt="instagram logo"></a>
+            <a href="https://www.youtube.com/@Audi" target="_blank"><img src="../img/svg's/youtube.svg"
+                                                                         alt="youtube logo"></a>
+        </div>
+
+        <div class="footerlinks">
+            <a href="./modellen">Modellen</a>
+            <a href="./diensten">Diensten</a>
+            <a href="./contact">Contact</a>
+            <a href="./about">Wie zijn Wij?</a>
+        </div>
+        <div class="iframe-container">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121633.42496413496!2d3.6343182274126384!3d51.03065166457719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c376aa1845ff4b%3A0x87911685441b19b8!2sAudi%20MIG%20Motors%20Gent%20Zuid!5e0!3m2!1snl!2sbe!4v1703152422796!5m2!1snl!2sbe"
+                    width="500" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" aria-label="google maps kaartje"></iframe>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

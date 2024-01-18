@@ -34,7 +34,8 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 <div class=container>
-    <h1>Inkomende berichten</h1>
+    <h1>AUDI ADMIN MODE</h1>
+    <h2>Inkomende berichten</h2>
     <?php if (sizeof($items) > 0) { ?>
     <div class=listing>
         <div>
