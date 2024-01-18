@@ -6,7 +6,9 @@
 }
 
 html {
-    font-family: 'ubuntu', sans-serif;
+    font-family: "ubuntu", sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
     scroll-behavior: smooth;
 }
 
@@ -24,13 +26,13 @@ header{
 }
 
 .container a:link {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: 'ubuntu', sans-serif;
     text-decoration: none;
 }
+
 .navbar {
     overflow: hidden;
-    font-family: "Arial", sans-serif;
+    font-family: "ubuntu", sans-serif;
     display: flex;
     justify-content: end;
 }
@@ -91,34 +93,125 @@ header{
     color: #000000;
 }
 
+/*slide show verander de px!!*/
+.slider{
+    width: 50rem;
+    height: 31rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 31.25rem;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 50rem;
+    height: 31rem;
+}
+/*radio buttons*/
+.navigation-manual{
+    position: absolute;
+    width: 50rem;
+    margin-top: -2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fdfdfd;
+    padding: 0.3em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 2.5rem;
+}
+.manual-btn:hover{
+    background-color: #fdfdfd;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+
+/*automatic*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 50rem;
+    justify-content: center;
+    margin-top: 28.75rem;
+}
+.navigation-auto div{
+    border: 2px solid #fdfdfd;
+    padding: 0.3em;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 2.5rem;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #fdfdfd;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #fdfdfd;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #fdfdfd;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #fdfdfd;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #fdfdfd;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #fdfdfd;
+}
 
 /* automodellen */
-main, main{
+main{
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;    
 }
-h1{
-    text-align: center;
+main h1{
+    font-size: 2.5rem;
 }
 
-.page, .menu{
+.menu{
     height: 100vh;
 }
 
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border: #6d0000 2px solid;
-}
-.menu > .automodellen {
-    display: flex;
-    align-items: center;
-    position: relative;
-    bottom: 30%;
-    height: 100vh;
-
 }
 
 .content{
@@ -132,6 +225,15 @@ h1{
     max-height: 80%;
     max-width: 50%;
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 500px;
+}
+
+@keyframes fade-in{
+    from {scale: .8; opacity: 0;}
+    to {scale: 1; opacity: 1;}
 }
 
 .automodellen {
@@ -161,31 +263,6 @@ a{
     width: 100%;
 }
 
-/*.automodellen li:hover .A6::after {
-    content: "De Audi A6 is een elegante en luxe middenklasse sedan, gekenmerkt door verfijnd design, hoogwaardige materialen en geavanceerde technologieën.";
-}
-
-.automodellen li:hover .R8::after {
-    content: "De Audi R8 is een high-performance sportwagen die indruk maakt met zijn adembenemend design, krachtige prestaties en geavanceerde technologieën.";
-}
-
-.automodellen li:hover .etron::after {
-    content: "De Audi e-tron is een geavanceerde elektrische SUV die indruk maakt met zijn elegante design, krachtige elektrische aandrijving en innovatieve technologieën.";
-}
-
-.automodellen li:hover .RS5::after {
-    content: "De Audi RS5 is een opwindende high-performance sportwagen met een perfecte balans tussen verbluffende prestaties, dynamisch design en geavanceerde technologieën.";
-}
-
-.automodellen li:hover .RS6::after {
-    content: "De Audi RS6 is een indrukwekkende high-performance sportwagen met een combinatie van krachtige prestaties, ruimte en verfijnde luxe.";
-}
-
-.automodellen li:hover .SQ8::after {
-    content: "De Audi SQ8 is een krachtige en stijlvolle SUV, waarbij indrukwekkende prestaties, luxe comfort en geavanceerde technologie samenkomen.";
-}
-*/
-
 .content{
     font-weight: 0;
     text-align: left;
@@ -193,10 +270,10 @@ a{
 
 hr{
     margin-top: 2rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     padding: 0.2rem;
     background-color: #6d0000;
-    transform: skew(30deg);
+    transform: skew(-30deg);
 }
 
 /* back to top */
@@ -215,4 +292,53 @@ hr{
 }
 .material-symbols-outlined:hover{
     padding-bottom: 0.7rem;
+}
+
+/*footer*/
+footer {
+    margin-top: 4rem;
+    bottom: 0;
+    background-color: #333333;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.iframe-container {
+    padding: 1rem;
 }
