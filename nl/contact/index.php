@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', 'Azerty123');
-define('DB_NAME', 'audi_db');
+define('DB_NAME', 'audi°db');
 
 date_default_timezone_set('Europe/Brussels');
 
@@ -74,6 +74,9 @@ if (isset($_POST['btnSubmit'])) {
 <head>
     <title>Contact</title>
     <meta charset="UTF-8"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="contact.css">
 </head>
@@ -127,7 +130,7 @@ if (isset($_POST['btnSubmit'])) {
             <div>
 
             </div>
-            <input type="submit" id="btnSubmit" name="btnSubmit" value="versturen"/>
+            <input type="submit" id="btnSubmit" name="btnSubmit" value="Versturen"/>
             <hr>
         </form>
         <img src="../../img/contact/contact.jpg" alt="Consultant">
