@@ -230,7 +230,7 @@ main h1{
     animation-range-start: cover;
     animation-range-end: 500px;
 }
-
+/*animatie pictures fading in*/
 @keyframes fade-in{
     from {scale: .8; opacity: 0;}
     to {scale: 1; opacity: 1;}
@@ -262,6 +262,31 @@ a{
     order: -1;
     width: 100%;
 }
+
+/*.automodellen li:hover .A6::after {
+    content: "De Audi A6 is een elegante en luxe middenklasse sedan, gekenmerkt door verfijnd design, hoogwaardige materialen en geavanceerde technologieën.";
+}
+
+.automodellen li:hover .R8::after {
+    content: "De Audi R8 is een high-performance sportwagen die indruk maakt met zijn adembenemend design, krachtige prestaties en geavanceerde technologieën.";
+}
+
+.automodellen li:hover .etron::after {
+    content: "De Audi e-tron is een geavanceerde elektrische SUV die indruk maakt met zijn elegante design, krachtige elektrische aandrijving en innovatieve technologieën.";
+}
+
+.automodellen li:hover .RS5::after {
+    content: "De Audi RS5 is een opwindende high-performance sportwagen met een perfecte balans tussen verbluffende prestaties, dynamisch design en geavanceerde technologieën.";
+}
+
+.automodellen li:hover .RS6::after {
+    content: "De Audi RS6 is een indrukwekkende high-performance sportwagen met een combinatie van krachtige prestaties, ruimte en verfijnde luxe.";
+}
+
+.automodellen li:hover .SQ8::after {
+    content: "De Audi SQ8 is een krachtige en stijlvolle SUV, waarbij indrukwekkende prestaties, luxe comfort en geavanceerde technologie samenkomen.";
+}
+*/
 
 .content{
     font-weight: 0;
