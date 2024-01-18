@@ -137,3 +137,9 @@ footer {
     display: flex;
     flex-direction: column;
 }
+/* FILEPATH: /c:/Users/Vincent/OneDrive - Emplo IT/Documents/co working project/co-working/nl/about/about.css */
+
+.picture img {
+    width: 100%;
+    height: auto;
+}
