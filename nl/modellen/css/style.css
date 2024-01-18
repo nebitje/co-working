@@ -230,7 +230,7 @@ main h1{
     animation-range-start: cover;
     animation-range-end: 500px;
 }
-/*animatie pictures fading in*/
+
 @keyframes fade-in{
     from {scale: .8; opacity: 0;}
     to {scale: 1; opacity: 1;}
