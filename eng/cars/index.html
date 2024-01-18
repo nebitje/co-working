@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Models</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+    <!--Arrow to the top-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <!--Free-form navigation bar-->
+        <div class="container">
+            <section class="navigation">
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu
+
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./">Models</a>
+                            <a href="../servicing">Services</a>
+                            <a href="#">Contact</a>
+                            <a href="#">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <h1>All Models</h1>
+        <section class="menu">
+            <div>
+                <a href="#A6"><img class="mySlides" src="./img/A6/Audi_A6_Zij.jpg"></a>
+                <a href="#R8"><img class="mySlides" src="./img/audiR8/Audi_R8_Zijkant.jpg"></a>
+                <a href="#etron"><img class="mySlides" src="./img/etron/Audi_e-tron_GT_Zij.jpg"></a>
+                <a href="#RS5"><img class="mySlides" src="./img/rs5/Audi_RS5_Zij.jpg"></a>
+                <a href="#RS6"><img class="mySlides" src="./img/rs6/Audi_RS6_Zij.jpg"></a>
+                <a href="#SQ8"><img class="mySlides" src="./img/SQ8/Audi_SQ8_Zij.jpg"></a>
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+            </script>
+        </section>
+
+        <section class="page" id="A6">
+            <hr>
+            <h2>Audi A6</h2>
+            <div class="content">
+                <p>The Audi A6 is a luxury sedan that excels in elegance, performance, and advanced technology. With a
+                    streamlined design, powerful engines, and a high-quality interior, the A6 offers a comfortable and
+                    stylish driving experience. The vehicle features advanced safety features and modern technologies,
+                    making it an ideal choice for those seeking a combination of refinement and performance.</p>
+                <img src="./img/A6/Audi_A6_Voor.jpg" alt="Audi A6 front">
+            </div>
+        </section>
+
+        <section class="page" id="R8">
+            <hr>
+            <h2>Audi R8</h2>
+            <div class="content">
+                <p>The Audi R8 is an impressive sports car that excels in power, speed, and refinement. With a striking
+                    design, powerful engines, and advanced technologies, the R8 offers a sensational driving experience.
+                    Both the sleek exterior and luxurious interior emphasize the sporty nature of this iconic car. With
+                    advanced driving assistance systems and safety features, the Audi R8 combines performance with
+                    peace
+                    of mind, making it the ultimate choice for enthusiasts of high-performance cars.</p>
+                <img src="./img/audiR8/Audi_R8_SchuinVoorAanzicht.jpg" alt="Audi R8 front">
+            </div>
+        </section>
+
+        <section class="page" id="etron">
+            <hr>
+            <h2>Audi e-tron</h2>
+            <div class="content">
+                <p>The Audi e-tron is a groundbreaking electric SUV that brings together innovation, style, and
+                    sustainability. With an advanced electric drivetrain, the e-tron offers impressive performance and
+                    an emission-free driving experience. The sleek design, high-quality interior, and advanced
+                    technological features make this SUV both practical and luxurious. For those looking for an
+                    environmentally conscious and high-quality electric vehicle, the Audi e-tron is a forward-thinking
+                    choice.</p>
+                <img src="./img/etron/Audi_e-tron_GT.jpg" alt="Audi Etron front">
+            </div>
+        </section>
+
+        <section class="page" id="RS5">
+            <hr>
+            <h2>Audi RS5</h2>
+            <div class="content">
+                <p>The Audi RS5 is an exciting high-performance sports car that embodies power, speed, and sportiness.
+                    With a powerful engine, striking design, and advanced technologies, the RS5 offers a breathtaking
+                    driving experience. Its streamlined exterior reflects its sporty nature, while the luxurious
+                    interior
+                    and advanced features create a perfect balance between performance and comfort. For enthusiasts
+                    of
+                    sports cars seeking excitement on the road, the Audi RS5 is the ultimate choice.</p>
+                <img src="./img/rs5/Audi_RS5_Voor.jpg" alt="Audi RS5 front">
+            </div>
+        </section>
+
+        <section class="page" id="RS6">
+            <hr>
+            <h2>Audi RS6</h2>
+            <div class="content">
+                <p>The Audi RS6 is a sensational high-performance sports car that combines power, speed, and luxury. With
+                    a
+                    powerful engine, striking sporty design, and advanced technologies, the RS6 offers a breathtaking
+                    driving experience. Its streamlined exterior exudes sportiness, while the luxurious interior and
+                    advanced features create a perfect harmony between performance and comfort. For enthusiasts of
+                    sports
+                    cars seeking ultimate speed and style on the road, the Audi RS6 is the perfect choice.</p>
+                <p class="stock">Stock available: 5</p>
+                <img src="./img/rs6/Audi_RS6_Voor.jpg" alt="Audi RS6 front">
+            </div>
+        </section>
+
+        <section class="page" id="SQ8">
+            <hr>
+            <h2>Audi SQ8</h2>
+            <div class="content">
+                <p>The Audi SQ8 is a powerful and luxurious SUV that combines top performance with refinement. With a
+                    powerful engine, impressive design, and advanced technologies, the SQ8 offers an exciting driving
+                    experience. Its streamlined exterior exudes power, while the high-quality interior and advanced
+                    features provide comfort and luxury. For those looking for an SUV with sporty performance and
+                    premium
+                    features, the Audi SQ8 is an excellent choice.</p>
+                <img src="./img/SQ8/Audi_SQ8_Voor.jpg" alt="Audi SQ8 front">
+            </div>
+        </section>
+        <!--Arrow to the top-->
+        <a href="#">
+            <span class="material-symbols-outlined">
+                keyboard_double_arrow_up
+            </span>
+        </a>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/AudiBelux" target="_blank"><img src ="./img/svg's/facebook-f.svg"
+                        alt="Facebook logo"></a>
+                <a href="https://www.instagram.com/audibelux/" target="_blank"><img src="./img/svg's/instagram.svg"
+                        alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/@Audi" target="_blank"><img src="./img/svg's/youtube.svg"
+                        alt="YouTube logo"></a>
+            </div>
+
+            <div class="footerlinks">
+                <a href="./cars">Models</a>
+                <a href="./servicing">Services</a>
+                <a href="./contact">Contact</a>
+                <a href="./about">About Us</a>
+            </div>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121633.42496413496!2d3.6343182274126384!3d51.03065166457719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c376aa1845ff4b%3A0x87911685441b19b8!2sAudi%20MIG%20Motors%20Gent%20Zuid!5e0!3m2!1snl!2sbe!4v1703152422796!5m2!1snl!2sbe"
+                    width="500" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" aria-label="google maps map"></iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
