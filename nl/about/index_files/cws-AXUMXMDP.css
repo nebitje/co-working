@@ -168,6 +168,10 @@ html {
 	scroll-behavior: smooth
 }
 
+html[data-environment=test] {
+	scroll-behavior: auto
+}
+
 body {
 	background: var(--cw#fdfdfd);
 	scrollbar-gutter: stable both-edges;
@@ -185,6 +189,7 @@ a {
 	-webkit-tap-highlight-color: rgba(194, 254, 6, .25)
 }
 
+
 .container,
 .container-fluid {
 	margin: 0 auto;
@@ -193,6 +198,7 @@ a {
 	padding-left: var(--container-padding);
 	padding-right: var(--container-padding)
 }
+
 
 .container-narrow {
 	margin: 0 auto;
@@ -275,27 +281,207 @@ body.portrait-hero-medium .hero--title {
 	color: #fff
 }
 
-.page-item--image {
-	max-width: auto;
-	max-height: auto;
-	overflow: hidden;
+@media (min-width: 44.5444444444rem) and (max-width: 88.7888888889rem) {
+	.hero--title {
+		text-wrap: balance
+	}
+}
+
+.image--image {
+	--image-border-radius: var(--border-radius-m);
+	border-radius: var(--image-border-radius)
+}
+
+.image--caption {
+	color: var(--pale-text-color);
+	margin-top: var(--gap-12);
+	font-size: .7777777778rem
+}
+
+.layout {
+	position: relative;
+	top: var(--fixed-bar-height);
+	display: flex;
+	min-height: calc(100vh - var(--fixed-bar-height) + var(--consumption-disclaimer-height, 0px));
+	flex-direction: column;
+	--scrollbar-track-color: var(--black-10p);
+	--header-height: 4.5rem;
+	--footer-height: 56px;
+	--consumption-banner-height: 0px
+}
+
+.layout--atop {
+	z-index: 7
+}
+
+.layout--header {
+	z-index: 6;
+	background-color: var(--cws-deep-blue)
+}
+
+body.landscape-hero-medium .layout--header,
+body.portrait-hero-medium .layout--header,
+body.blank-hero .layout--header {
+	margin-bottom: 0
+}
+
+.layout--backdrop {
+	opacity: 0;
+	transition: opacity var(--transition-quick);
+	pointer-events: none;
+	position: fixed;
+	inset: 0;
+	background-color: var(--backdrop-color);
+	z-index: 5
+}
+
+.layout--page {
+	flex: 1 0 auto;
+	background-color: #fff
+}
+
+.page-body {
+	padding-bottom: var(--row-spacing)
+}
+
+.page-body.-template-builder-page {
+	padding-bottom: 0
+}
+
+.page-item--column>.page-row:nth-child(2):nth-last-child(2) {
+	height: 100%
+}
+
+.page-row-spacer {
+	padding-bottom: var(--height, 0)
+}
+
+.content>.page-row-spacer:first-child,
+.collapsible--content>.page-row-spacer:first-child {
+	display: none
+}
+
+.page-item--column .page-row-spacer:first-child,
+.page-item--column .page-row-spacer:last-child {
+	display: none
+}
+
+.page-row-spacer {
+	--height: var(--row-spacing)
+}
+
+.page-row-spacer.-text {
+	--height: var(--space-7)
+}
+
+.content>.page-row-spacer:first-child {
+	display: block
+}
+
+:where(.page-item--column) .page-row-spacer {
+	--height: var(--column-gap)
+}
+
+.responsive-tier-detector {
+	position: absolute;
+	height: 0;
+	width: 0
+}
+
+@media (min-width: 44.5444444444rem) and (max-width: 88.7888888889rem) {
+	.responsive-tier-detector {
+		font-family: viewport-default
+	}
+}
+
+.row {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-  }
-  
-  .image-container {
-	position: relative;
-  }
-  
-  .page-item--image img {
-	width: auto;
-	height: auto;
-	display: block;
-  }
-  
-  .cropped-image--sizer {
-	display: block;
-	padding-bottom: var(--image-aspect-ratio, 100%);
-  }
-  
+	align-items: stretch;
+	gap: var(--column-gap)
+}
+
+.col-sm-4,
+.col-md-4 {
+	width: 33%
+}
+
+.col-sm-8,
+.col-md-8 {
+	width: 67%
+}
+
+.col-sm-12,
+.col-md-12 {
+	width: 100%
+}
+
+.column-width-20 {
+	width: 20%
+}
+
+.text-block,
+.text-block-cws {
+	word-break: break-word
+}
+
+.text-block p+p,
+.text-block-cws p+p {
+	margin-top: 1em
+}
+
+.text-block>:first-child,
+.text-block-cws>:first-child {
+	margin-top: 0
+}
+
+.text-block>:last-child,
+.text-block-cws>:last-child {
+	margin-bottom: 0
+}
+
+.page-item--text .text-block,
+.page-item--text .text-block-cws {
+	column-width: 280px;
+	column-gap: var(--column-gap)
+}
+
+html {
+    font-family: "ubuntu", sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
+}
+
+body {
+	background: var(--cw#fdfdfd);
+	scrollbar-gutter: stable both-edges;
+	font-family:  "ubuntu", sans-serif;
+	line-height: 1.5;
+	color: var(#fdfdfd);
+	overflow-x: clip;
+	overflow-y: scroll;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+body img {
+    opacity: 0.5;
+    transition: opacity 2.5s ease; /* Optional: Add a smooth transition effect */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    overflow: hidden; /* Ensure content outside the viewport is hidden */
+}
+
+p {
+    opacity: 0;
+    transform: translateY(50px); /* Initial position outside the viewport */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition effect */
+}
+
+
